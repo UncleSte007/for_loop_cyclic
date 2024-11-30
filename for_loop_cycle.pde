@@ -8,26 +8,29 @@
 
 int step = 1;
 int range = 255;
+int y, yabs;
 int x = 0;
 
 void setup(){
     
     size(640, 480);
     background(70);
-    noLoop();
+    strokeWeight(2);
+    stroke(0);
+    
+    for(yabs = -range; yabs != range; yabs += step)
+    {y = range-abs(yabs);
+        
+        point(x, y);
+        x++;
+    }
+    
+        noLoop();
     
 }
 
 void draw()
 {
-    strokeWeight(2);
-    stroke(128, 0, 234);
     
-    for(int y = -range; y!= range; y += step)
-    {
-        y = abs(y);
-        point(x, y);
-        x++;
-    }
     
 }
