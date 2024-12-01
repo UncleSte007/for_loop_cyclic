@@ -18,7 +18,7 @@ void setup(){
     strokeWeight(2);
     stroke(0);
     
-    for(yabs = -range; yabs != range; yabs += step)
+    for(yabs = -range; yabs <= range; yabs += step)
     {y = range-abs(yabs);
         
         point(x, y);
