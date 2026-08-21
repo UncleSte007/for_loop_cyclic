@@ -1,9 +1,9 @@
 /* 	Minimal for-loop cycle code
 	Author Stephen Lawson:
 	Git: UncleSte007
-	Date 01/12/2024
-	Apple clang version 16.0.0 (clang-1600.0.26.4)
-	Target: x86_64-apple-darwin24.1.0
+	Date 21/08/2026
+	Apple clang version 21.0.0 (clang-2100.0.123.102)
+	Target: arm64-apple-darwin25.5.0
 	Thread model: posix
 */
 
@@ -11,15 +11,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int step = 1;
-int start = 20;
-int end = 200;
-int range = end - start;
-int ya;
-
-
 int main(){
     
+	int step = 1;
+	int start = 0;
+	int end = 255;
+	int range = end - start;
+	int ya;
+
+
     for(ya = -range; ya <= range; ya += step) // ya: -255...0...+255
     {        
         printf("value: %d\n", y);					//y: 0...255...0
